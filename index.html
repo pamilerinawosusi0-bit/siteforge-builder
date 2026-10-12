@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <title>Delight Hotel & Suites | Ado-Ekiti</title>
+
+  <link rel="stylesheet" href="Style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-logo">DELIGHT</div>
+    <div class="loader-line"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo">
+      <span>DELIGHT</span>
+      <small>HOTEL & SUITES</small>
+    </a>
+
+    <nav id="navMenu">
+      <a href="#home">Home</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#experience">Experience</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#booking" class="nav-book">Book Now</a>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </header>
+
+
+  <main>
+
+    <!-- HERO: video first (normal size), photos appear as you scroll -->
+    <section class="hero" id="home">
+
+      <div class="hero-pin">
+
+        <div class="hero-slides" id="heroSlides">
+
+          <div class="hero-slide hero-video-slide active" data-scene="Welcome" data-type="video">
+            <video id="heroVideo" muted loop playsinline preload="auto" poster="images/hero-poster.jpg">
+              <source src="images/hero.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="hero-slide zoom-in" data-scene="Pool"
+               style="--img:url('images/2f8213ad.jpg')"></div>
+
+          <div class="hero-slide zoom-out" data-scene="Waterfall"
+               style="--img:url('images/front-view.jpg')"></div>
+
+        </div>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content" id="heroContent">
+          <p class="eyebrow">WELCOME TO ADO-EKITI</p>
+
+          <h1>
+            Stay somewhere
+            <span>worth remembering.</span>
+          </h1>
+
+          <p class="hero-text">
+            A refined hotel experience designed for relaxation,
+            comfort, business and unforgettable moments.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#booking" class="gold-btn">Book Your Stay <span>→</span></a>
+            <a href="#rooms" class="outline-btn">Explore Rooms</a>
+          </div>
+        </div>
+
+        <div class="scroll-down">
+          <span>SCROLL</span>
+          <div></div>
+          <span class="scene-label" id="sceneLabel">WELCOME</span>
+        </div>
+
+        <div class="hero-card">
+          <span>ADO-EKITI</span>
+          <strong>ILAWE ROAD</strong>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- INTRO -->
+    <section class="intro section">
+
+      <div class="intro-image reveal-left">
+        <div class="image-box">
+          <img src="images/front-view.jpg" alt="Delight Hotel & Suites front view">
+        </div>
+
+        <div class="experience-badge">
+          <strong>DELIGHT</strong>
+          <span>HOTEL & SUITES</span>
+        </div>
+      </div>
+
+      <div class="intro-text reveal-right">
+        <p class="eyebrow dark">A BETTER WAY TO STAY</p>
+
+        <h2>Comfort meets <em>character.</em></h2>
+
+        <p>
+          Welcome to Delight Hotel & Suites, where modern comfort,
+          warm hospitality and memorable experiences come together.
+        </p>
+
+        <p>
+          Whether you're visiting Ado-Ekiti for business, leisure,
+          celebrations or a peaceful getaway, every detail is designed
+          to make your stay feel effortless.
+        </p>
+
+        <a href="#experience" class="text-link">Discover Delight <span>→</span></a>
+      </div>
+
+    </section>
+
+
+    <!-- ROOMS -->
+    <section class="rooms section dark-section" id="rooms">
+
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">STAY YOUR WAY</p>
+          <h2>Rooms & <em>Suites</em></h2>
+        </div>
+
+        <p class="heading-description">
+          Spaces created for deep rest, productive mornings
+          and comfortable evenings.
+        </p>
+      </div>
+
+      <div class="room-grid">
+
+        <article class="room-card reveal">
+          <div class="room-info">
+            <p>01 / DELUXE</p>
+            <h3>Deluxe Room</h3>
+            <span class="room-feature">Air-conditioned · Flat-screen TV · Work desk</span>
+            <a href="#booking" class="room-link">View & Book →</a>
+          </div>
+        </article>
+
+
+        <article class="room-card reveal delay-1">
+          <div class="room-info">
+            <p>02 / EXECUTIVE</p>
+            <h3>Executive Suite</h3>
+            <span class="room-feature">Twin Queen Beds · Air-conditioned · Spacious</span>
+            <a href="#booking" class="room-link">View & Book →</a>
+          </div>
+        </article>
+
+
+        <article class="room-card reveal delay-2">
+          <div class="room-info">
+            <p>03 / SIGNATURE</p>
+            <h3>Signature Suite</h3>
+            <span class="room-feature">Premium Bed · Air-conditioned · TV</span>
+            <a href="#booking" class="room-link">View & Book →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- EXPERIENCE -->
+    <section class="experience section" id="experience">
+
+      <div class="section-heading center reveal">
+        <p class="eyebrow dark">MORE THAN A ROOM</p>
+        <h2>The Delight <em>Experience</em></h2>
+        <p>
+          Everything you need for a comfortable and memorable stay.
+        </p>
+      </div>
+
+      <div class="service-grid">
+
+        <div class="service reveal">
+          <div class="service-number">01</div>
+          <div class="service-icon">♨</div>
+          <h3>Relax</h3>
+          <p>
+            Unwind in beautifully designed spaces created
+            for comfort and peace.
+          </p>
+        </div>
+
+        <div class="service reveal delay-1">
+          <div class="service-number">02</div>
+          <div class="service-icon">🍽</div>
+          <h3>Dine</h3>
+          <p>
+            Enjoy meals at our restaurant and
+            refreshing drinks at the bar.
+          </p>
+        </div>
+
+        <div class="service reveal delay-2">
+          <div class="service-number">03</div>
+          <div class="service-icon">◉</div>
+          <h3>Celebrate</h3>
+          <p>
+            Host conferences, banquets and special
+            occasions with a team that cares.
+          </p>
+        </div>
+
+        <div class="service reveal delay-3">
+          <div class="service-number">04</div>
+          <div class="service-icon">⌁</div>
+          <h3>Connect</h3>
+          <p>
+            Stay connected with reliable Wi-Fi and convenient
+            spaces for work or meetings.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- FULL IMAGE BANNER -->
+    <section class="banner">
+      <div class="banner-bg"></div>
+      <div class="banner-overlay"></div>
+
+      <div class="banner-content reveal">
+        <p class="eyebrow">YOUR NEXT ESCAPE</p>
+        <h2>Make room for<br><em>something beautiful.</em></h2>
+        <a href="#booking" class="gold-btn">Reserve Your Room →</a>
+      </div>
+    </section>
+
+
+    <!-- GALLERY -->
+    <section class="gallery section" id="gallery">
+
+      <div class="section-heading center reveal">
+        <p class="eyebrow dark">A GLIMPSE</p>
+        <h2>Inside <em>Delight</em></h2>
+      </div>
+
+      <div class="gallery-grid">
+
+        <div class="gallery-item reveal">
+          <img src="images/2f8213ad.jpg" alt="Swimming pool">
+        </div>
+
+        <div class="gallery-item reveal delay-1">
+          <img src="images/front-view.jpg" alt="Waterfall fountain at the hotel entrance">
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- BOOKING -->
+    <section class="booking section dark-section" id="booking">
+
+      <div class="booking-layout">
+
+        <div class="booking-copy reveal-left">
+          <p class="eyebrow">PLAN YOUR STAY</p>
+          <h2>Your room is <em>waiting.</em></h2>
+
+          <p>
+            Tell us when you'd like to stay and our team will
+            help you find the perfect room.
+          </p>
+
+          <div class="booking-contact">
+            <span>NEED HELP?</span>
+            <strong><a href="tel:+2348083745991">Call +234 808 374 5991</a></strong>
+          </div>
+        </div>
+
+        <form class="booking-form reveal-right" id="bookingForm">
+
+          <div class="form-row">
+
+            <label>
+              CHECK IN
+              <input type="date" id="checkIn" required>
+            </label>
+
+            <label>
+              CHECK OUT
+              <input type="date" id="checkOut" required>
+            </label>
+
+          </div>
+
+          <div class="form-row">
+
+            <label>
+              GUESTS
+              <select id="guests">
+                <option>1 Guest</option>
+                <option>2 Guests</option>
+                <option>3 Guests</option>
+                <option>4 Guests</option>
+                <option>5+ Guests</option>
+              </select>
+            </label>
+
+            <label>
+              ROOM
+              <select id="roomType">
+                <option>Deluxe Room</option>
+                <option>Executive Suite</option>
+                <option>Signature Suite</option>
+              </select>
+            </label>
+
+          </div>
+
+          <label>
+            FULL NAME
+            <input type="text" id="guestName" placeholder="Your name" required>
+          </label>
+
+          <label>
+            PHONE NUMBER
+            <input type="tel" id="phone" placeholder="080..." required>
+          </label>
+
+          <button type="submit" class="gold-btn full-btn">
+            Request on WhatsApp →
+          </button>
+
+          <button type="button" class="email-btn" id="emailBtn">
+            Or send this request by email
+          </button>
+
+          <p class="form-note">
+            This sends your booking request to the hotel. Final availability
+            and price will be confirmed by the hotel.
+          </p>
+
+        </form>
+
+      </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+
+      <div class="contact-info reveal-left">
+        <p class="eyebrow dark">FIND US</p>
+        <h2>Come experience <em>Delight.</em></h2>
+
+        <div class="contact-detail">
+          <span>ADDRESS</span>
+          <strong>Ilawe Road, Ado-Ekiti,<br>Ekiti State, Nigeria</strong>
+        </div>
+
+        <div class="contact-detail">
+          <span>PHONE</span>
+          <strong><a href="tel:+2348083745991">+234 808 374 5991</a></strong>
+        </div>
+
+        <div class="contact-detail">
+          <span>EMAIL</span>
+          <strong><a href="mailto:info@delighthotel.com.ng">info@delighthotel.com.ng</a></strong>
+        </div>
+
+        <div class="facts">
+          <div><span>SWIMMING POOL</span><strong>On site</strong></div>
+          <div><span>PARKING</span><strong>Free, on site</strong></div>
+          <div><span>WI-FI</span><strong>Free</strong></div>
+        </div>
+
+        <div class="contact-actions" style="margin-top:34px">
+          <a class="whatsapp-btn" href="https://wa.me/2348083745991" target="_blank" rel="noopener">Chat on WhatsApp ↗</a>
+          <a class="whatsapp-btn call-btn" href="tel:+2348083745991">Call now</a>
+          <a class="whatsapp-btn call-btn" href="https://www.google.com/maps/search/?api=1&query=Delight+Hotel+and+Suites+Ilawe+Road+Ado-Ekiti" target="_blank" rel="noopener">Open in Maps ↗</a>
+        </div>
+      </div>
+
+      <div class="map-box reveal-right">
+
+        <div class="map-tabs">
+          <button type="button" class="map-tab active" data-tab="guide">Area guide</button>
+          <button type="button" class="map-tab" data-tab="live">Live map</button>
+        </div>
+
+        <div class="map-panel" id="panelGuide">
+          <div class="map-hotel-title"><strong>DELIGHT HOTEL &amp; SUITES</strong><span>Ado–Ilawe Road, Ado-Ekiti</span></div>
+          <svg class="area-svg" viewBox="0 0 360 360" role="img" aria-label="Places around Delight Hotel &amp; Suites">
+<circle cx="180" cy="180" r="50.0" class="ring"/>
+<text x="180" y="126.0" class="ring-label" text-anchor="middle">1 km</text>
+<circle cx="180" cy="180" r="70.7" class="ring"/>
+<text x="180" y="105.3" class="ring-label" text-anchor="middle">2 km</text>
+<circle cx="180" cy="180" r="100.0" class="ring"/>
+<text x="180" y="76.0" class="ring-label" text-anchor="middle">4 km</text>
+<circle cx="180" cy="180" r="122.5" class="ring"/>
+<text x="180" y="53.5" class="ring-label" text-anchor="middle">6 km</text>
+<line x1="180" y1="180" x2="204.7" y2="150.6" class="spoke"/>
+<line x1="180" y1="180" x2="193.5" y2="217.0" class="spoke"/>
+<line x1="180" y1="180" x2="141.3" y2="194.1" class="spoke"/>
+<line x1="180" y1="180" x2="144.8" y2="138.0" class="spoke"/>
+<line x1="180" y1="180" x2="247.9" y2="192.0" class="spoke"/>
+<line x1="180" y1="180" x2="140.5" y2="264.8" class="spoke"/>
+<line x1="180" y1="180" x2="215.5" y2="82.6" class="spoke"/>
+<line x1="180" y1="180" x2="76.0" y2="142.1" class="spoke"/>
+<line x1="180" y1="180" x2="274.6" y2="259.4" class="spoke"/>
+<g class="pt"><circle cx="204.7" cy="150.6" r="11"/><text x="204.7" y="154.6" text-anchor="middle">1</text></g>
+<g class="pt"><circle cx="193.5" cy="217.0" r="11"/><text x="193.5" y="221.0" text-anchor="middle">2</text></g>
+<g class="pt"><circle cx="141.3" cy="194.1" r="11"/><text x="141.3" y="198.1" text-anchor="middle">3</text></g>
+<g class="pt"><circle cx="144.8" cy="138.0" r="11"/><text x="144.8" y="142.0" text-anchor="middle">4</text></g>
+<g class="pt"><circle cx="247.9" cy="192.0" r="11"/><text x="247.9" y="196.0" text-anchor="middle">5</text></g>
+<g class="pt"><circle cx="140.5" cy="264.8" r="11"/><text x="140.5" y="268.8" text-anchor="middle">6</text></g>
+<g class="pt"><circle cx="215.5" cy="82.6" r="11"/><text x="215.5" y="86.6" text-anchor="middle">7</text></g>
+<g class="pt"><circle cx="76.0" cy="142.1" r="11"/><text x="76.0" y="146.1" text-anchor="middle">8</text></g>
+<g class="pt"><circle cx="274.6" cy="259.4" r="11"/><text x="274.6" y="263.4" text-anchor="middle">9</text></g>
+<g class="hotel-pin"><circle cx="180" cy="180" r="19"/><text x="180" y="185" text-anchor="middle">D</text></g>
+</svg>
+          <p class="map-caption">Straight-line distances from the hotel. Directions on this guide are illustrative; use the live map for exact positions.</p>
+          <ol class="nearby">
+<li><b>1</b><span>Royal Family / RCCG Youth Province 9</span><em>0.59 km</em></li>
+<li><b>2</b><span>CDA Events Centre</span><em>0.62 km</em></li>
+<li><b>3</b><span>Mosque</span><em>0.68 km</em></li>
+<li><b>4</b><span>Living Faith Church (Winners' Chapel)</span><em>1.2 km</em></li>
+<li><b>5</b><span>Esa Cave</span><em>1.9 km</em></li>
+<li><b>6</b><span>G-BOS Hotel & Event Centre</span><em>3.5 km</em></li>
+<li><b>7</b><span>Ekiti State Public Library</span><em>4.3 km</em></li>
+<li><b>8</b><span>Iya Eleje Plaza</span><em>4.9 km</em></li>
+<li><b>9</b><span>Ureje Dam</span><em>6.1 km</em></li>
+          </ol>
+          <p class="far-title">FARTHER OUT</p>
+          <ul class="far">
+            <li><span>Fajuyi Memorial Park</span><em>about 12 min drive</em></li>
+            <li><span>Ekiti Agro-Allied International Airport</span><em>about 20 km</em></li>
+          </ul>
+        </div>
+
+        <div class="map-panel" id="panelLive" hidden>
+          <iframe id="liveMap" title="Live map of Delight Hotel &amp; Suites" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p class="map-caption">If the map does not appear here, tap "Open in Google Maps" below.</p>
+        </div>
+
+        <div class="map-links">
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Delight+Hotel+and+Suites+Ilawe+Road+Ado-Ekiti" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+          <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Delight+Hotel+and+Suites+Ilawe+Road+Ado-Ekiti" target="_blank" rel="noopener">Get directions ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=restaurants+near+Delight+Hotel+and+Suites+Ado-Ekiti" target="_blank" rel="noopener">Restaurants nearby ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=banks+ATM+near+Delight+Hotel+and+Suites+Ado-Ekiti" target="_blank" rel="noopener">Banks &amp; ATMs ↗</a>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-top">
+
+      <div class="footer-logo">
+        <span>DELIGHT</span>
+        <small>HOTEL & SUITES</small>
+      </div>
+
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#rooms">Rooms</a>
+        <a href="#experience">Experience</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#booking">Book</a>
+      </div>
+
+    </div>
+
+    <div class="footer-contact">
+      <a href="tel:+2348083745991">+234 808 374 5991</a>
+      <a href="mailto:info@delighthotel.com.ng">info@delighthotel.com.ng</a>
+      <span>Ilawe Road, Ado-Ekiti, Ekiti State</span>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Delight Hotel & Suites</span>
+      <span>ADO-EKITI · NIGERIA</span>
+    </div>
+
+  </footer>
+
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button id="closeLightbox">×</button>
+    <img id="lightboxImage" src="" alt="Gallery preview">
+  </div>
+
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">
+    <strong>Booking request ready</strong>
+    <span>We'll help confirm your reservation.</span>
+  </div>
+
+
+  <script src="javascript.js"></script>
+
+</body>
+</html>
